@@ -1,0 +1,11 @@
+const select = [...itens].map((item)=>{
+    item.addEventListener("click", (item)=> {
+        const selected = document.querySelector(".selected")
+        if (selected != null) {
+            selected.classList.remove("selected")
+        }
+        item.classList.add("selected")
+    })
+})
+
+<li><ion-icon name="checkbox-sharp" class="checkbox marked"></ion-icon><span class="task">Terminar esse projeto pessoal</span></li>

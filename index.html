@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
     <title>Joseph To-do List</title>
 </head>
+
 <body>
-    
+    <section class="main">
+        <header>
+            <span class="item selected">Day</span><span class="item">Week</span><span class="item">Month</span><span class="item">Year</span>
+        </header>
+        <div class="hr"></div>
+        <div class="mainDate">
+            <ion-icon name="chevron-back-outline" class="braket"></ion-icon>
+            <div class="date">
+                <h1></h1>
+                <p></p>
+            </div>
+            <ion-icon name="chevron-forward-outline" class="braket"></ion-icon>
+        </div>
+        <input class="newTask" type="text" placeholder="Adicione uma tarefa...">
+        
+        <section class="tasks">
+            <ul>
+            </ul>
+        </section>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
